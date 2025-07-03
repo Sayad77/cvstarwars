@@ -19,11 +19,13 @@ header {
     height: 210px;
     border-radius: 20%;
     object-fit: cover;
+    object-position: top; /* 👉 ajoute cette ligne */
     margin: 0 auto 10px;
     display: block;
     border: 3px solid #FFE81F;
     transition: transform 0.3s;
 }
+
 
 .profile-image:hover {
     transform: scale(1.1);
