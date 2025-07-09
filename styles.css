@@ -2,6 +2,8 @@ body {
     background-color: #000;
     color: #FFE81F;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    z-index: 0;
     line-height: 1.8;
     margin: 0;
     padding: 20px;
