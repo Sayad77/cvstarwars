@@ -9,6 +9,8 @@ body {
   z-index: 0;
 }
 
+/* ... tout le reste inchangé ... */
+
 #starfield {
   position: fixed;
   top: 0;
@@ -17,8 +19,42 @@ body {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  opacity: 0.2;
+  opacity: 0.4; /* 👈 augmentée ici */
 }
+
+h2 {
+  color: #FF9900;
+  border-bottom: 1px solid #FFE81F;
+  padding-bottom: 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* 🟨 Animation bande jaune au survol */
+h2:hover {
+  color: #000;
+  background-color: #FFE81F;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-shadow: none;
+}
+
+h3 {
+  color: #FFE81F;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+/* 🟨 Survol bande jaune pour h3 */
+h3:hover {
+  color: #000;
+  background-color: #FFE81F;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 header {
   text-align: center;
@@ -57,11 +93,6 @@ h1 {
   text-shadow: 0 0 10px rgba(255, 232, 31, 0.5);
 }
 
-h2 {
-  color: #FF9900;
-  border-bottom: 1px solid #FFE81F;
-  padding-bottom: 5px;
-}
 
 .section {
   margin-bottom: 20px;
